@@ -1,0 +1,147 @@
+<!--
+    Create index.html file
+    Write all HTML code in html file and save it in new repository
+    In html file create a form and under the form, you need to create a table with fieldset, colspan and rowspan options
+    Set title of webpage "HCI Assignment-02"
+    Set background image of the web page
+    Set top heading for the title and put it on the center
+    Add neccecary info required for forum
+    Re-arrange the forum page according to table
+    Page must contain a radio button, checkboxes and date with calandar option
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>HCI Assignment-02</title>
+    </head>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      fieldset{
+        margin:auto;
+      }
+      table, th, td {
+        border: 1px solid black; margin-left:auto; margin-right:auto;
+        width: 100px;
+        height: 50px;
+      }
+      #submission{
+        text-align: right;
+      }
+      body {
+       background-image: url('https://media.istockphoto.com/photos/rainbow-picture-id171136192?k=6&m=171136192&s=170667a&w=0&h=Wc5Hvxh3kF64U8U5fsOFWNHyMrkvQXxML64Bzg2sQik=');
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+       }
+    </style>
+    <body>
+      <!--Le Title-->
+      <h1>HCI Assignment-02</h1>
+      <!--Fieldset (Fill in personal info)-->
+      <form action="/action_page.php">
+        <fieldset style="width: 50%;">
+          <legend>Registration:</legend>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="id">Student ID:</label>
+          <input type="text" id="id" name="id"><br><br>
+          <!--Yes this is for highschool-->
+          <h4>Which year are you?</h4>
+          <input type="radio" id="7" name="year" value="7">
+          <label for="7">7</label>
+          <input type="radio" id="8" name="year" value="8">
+          <label for="8">8</label>
+          <input type="radio" id="9" name="year" value="9">
+          <label for="9">9</label>
+          <input type="radio" id="10" name="year" value="10">
+          <label for="10">10</label>
+          <input type="radio" id="11" name="year" value="11">
+          <label for="11">11</label>
+          <input type="radio" id="12" name="year" value="12">
+          <label for="12">12</label><br><br>
+          
+          <label for="DoS">Date of Submission:</label>
+          <input type="date" id="DoS" name="DoS"><br><br>
+          <!--Rowspan Table-->
+          <h1>IB CAS CCA Signups</h1>
+            <table style="width:75%">
+            <!--Each club has its own name and description-->
+              <tr>
+                <th colspan="2">Available CCAs</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Availability</th>
+              </tr>
+              <!--Creativity Clubs-->
+              <tr>
+                <th rowspan="3">Creativity</th>
+                <td>Arts and Crafts</td>
+                <td>Tuesday & Thursday</td>
+                <td>15:00-16:00</td>
+                <td><input type="checkbox" name="ver1"/></td></td>
+              </tr>
+              <tr>
+                <td>Cooking</td>
+                <td>Wednesday</td>
+                <td>15:00-16:00</td>
+                <td><input type="checkbox" name="ver2"/></td>
+              </tr>
+              <tr>
+                <td>Table-Top Games</td>
+                <td>Friday</td>
+                <td>15:00-18:00</td>
+                <td><input type="checkbox" name="ver3"/></td>
+              </tr>
+              <!--Activity Clubs-->
+              <tr>
+                <th rowspan="3">Activity</th>
+                <td>Basketball</td>
+                <td>Monday</td>
+                <td>15:00-16:00</td>
+                <td><input type="checkbox" name="ver4"/></td>
+              </tr>
+              <tr>
+                <td>Dance</td>
+                <td>Thursday</td>
+                <td>15:00-16:00</td>
+                <td><input type="checkbox" name="ver5"/></td>
+              </tr>
+              <tr>
+                <td>Swimming</td>
+                <td>Friday</td>
+                <td>15:00-16:00</td>
+                <td><input type="checkbox" name="ver6"/></td>
+              </tr>
+              <!--Service Clubs-->
+              <tr>
+                <th rowspan="3">Service</th>
+                <td>Beach Cleanup</td>
+                <td>Tuesday</td>
+                <td>15:00-16:00</td>
+                <td><input type="checkbox" name="ver7"/></td>
+              </tr>
+              <tr>
+                <td>Community Service</td>
+                <td>Wednesday</td>
+                <td>15:00-16:00</td>
+                <td><input type="checkbox" name="ver8"/></td>
+              </tr>
+              <tr>
+                <td>Tutoring</td>
+                <td>Monday</td>
+                <td>15:00-16:00</td>
+                <td><input type="checkbox" name="ver9"/></td>
+              </tr>
+            </table><br><br>
+          <div id="submission">
+            <input type="submit" value="Submit">
+          </div>
+        </fieldset>
+      </form> 
+    </body>
+  </html>
